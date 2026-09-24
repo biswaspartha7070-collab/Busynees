@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== SEO Meta Tags ===== -->
+    <title>busynes | Modern Digital Solutions for Modern Business — E-commerce & Website Development</title>
+    <meta name="description" content="busynes delivers professional e-commerce, business, and custom website development services. Mobile-friendly, SEO-optimized, and fully customizable digital solutions. Order now via WhatsApp.">
+    <meta name="keywords" content="busynes, busynes website development, ecommerce website, business website, custom web solutions, digital solutions, web design, online store, SEO website, Bangladesh, India, digital agency">
+    <meta name="author" content="busynes">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#06080f">
+
+    <link rel="canonical" href="https://yourdomain.com/">
+
+    <!-- ===== Open Graph / Facebook ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="busynes | Modern Digital Solutions for Modern Business">
+    <meta property="og:description" content="E-commerce, business, and custom website development services by busynes. Your idea, our technology — let's build your digital identity together.">
+    <meta property="og:image" content="https://yourdomain.com/llo.png">
+    <meta property="og:image:alt" content="busynes Logo">
+    <meta property="og:site_name" content="busynes">
+    <meta property="og:locale" content="en_US">
+
+    <!-- ===== Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://yourdomain.com/">
+    <meta name="twitter:title" content="busynes | Modern Digital Solutions for Modern Business">
+    <meta name="twitter:description" content="Professional e-commerce & business website development by busynes. Order directly via WhatsApp.">
+    <meta name="twitter:image" content="https://yourdomain.com/llo.png">
+
+    <!-- ===== Favicon ===== -->
+    <link rel="icon" type="image/png" href="llo.png">
+    <link rel="apple-touch-icon" href="llo.png">
+
+    <!-- ===== Structured Data ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "busynes",
+      "url": "https://yourdomain.com/",
+      "logo": "https://yourdomain.com/llo.png",
+      "description": "busynes — Modern e-commerce, business, and custom website development services.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+917384058767",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi", "Bengali"]
+      }
+    }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===== Root Variables ===== */
+        :root {
+            --bg-primary: #06080f;
+            --bg-secondary: #0b0f1c;
+            --bg-card: rgba(20, 26, 45, 0.55);
+            --bg-card-hover: rgba(28, 36, 60, 0.75);
+            --border-subtle: rgba(120, 145, 200, 0.12);
+            --border-glow: rgba(99, 132, 255, 0.35);
+            --text-primary: #eef2ff;
+            --text-secondary: #a5b0cd;
+            --text-muted: #6b7699;
+            --accent-blue: #4d7cff;
+            --accent-cyan: #22d3ee;
+            --accent-purple: #8b5cf6;
+            --accent-green: #25D366;
+            --accent-green-dark: #128C7E;
+            --gradient-main: linear-gradient(135deg, #4d7cff 0%, #22d3ee 100%);
+            --gradient-warm: linear-gradient(135deg, #8b5cf6 0%, #4d7cff 100%);
+            --gradient-green: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            --shadow-glow: 0 20px 60px -15px rgba(77, 124, 255, 0.35);
+            --shadow-card: 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+            --radius-lg: 28px;
+            --radius-md: 18px;
+            --radius-sm: 12px;
+            --radius-full: 999px;
+        }
+
+        /* ===== Reset ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        /* Ambient background glows */
+        body::before,
+        body::after {
+            content: '';
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(140px);
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.35;
+        }
+
+        body::before {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, #4d7cff, transparent 70%);
+            top: -250px;
+            left: -200px;
+        }
+
+        body::after {
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, #8b5cf6, transparent 70%);
+            bottom: -200px;
+            right: -150px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 22px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ===== Header ===== */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(6, 8, 15, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 14px 0;
+            transition: 0.3s ease;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo-wrap {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .logo-img {
+            height: 42px;
+            width: 42px;
+            object-fit: contain;
+            border-radius: 12px;
+            background: rgba(77, 124, 255, 0.08);
+            border: 1px solid var(--border-subtle);
+            padding: 4px;
+            transition: 0.3s;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.06);
+            border-color: var(--border-glow);
+        }
+
+        .logo-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a.nav-item {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.92rem;
+            padding: 8px 14px;
+            border-radius: var(--radius-full);
+            transition: 0.25s;
+        }
+
+        .nav-links a.nav-item:hover {
+            color: var(--text-primary);
+            background: rgba(77, 124, 255, 0.1);
+        }
+
+        .btn-whatsapp-nav {
+            background: var(--gradient-green);
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 0.88rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            transition: 0.28s;
+            box-shadow: 0 8px 20px -6px rgba(37, 211, 102, 0.5);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-whatsapp-nav:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 26px -6px rgba(37, 211, 102, 0.7);
+        }
+
+        /* Mobile nav toggle */
+        .nav-toggle {
+            display: none;
+            background: rgba(77, 124, 255, 0.1);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-primary);
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            align-items: center;
+            justify-content: center;
+            transition: 0.25s;
+        }
+
+        .nav-toggle:hover {
+            background: rgba(77, 124, 255, 0.2);
+        }
+
+        /* ===== Hero ===== */
+        .hero {
+            padding: 90px 0 80px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(77, 124, 255, 0.08);
+            border: 1px solid rgba(77, 124, 255, 0.25);
+            color: #9dbaff;
+            padding: 8px 18px;
+            border-radius: var(--radius-full);
+            font-weight: 500;
+            font-size: 0.82rem;
+            letter-spacing: 0.3px;
+            margin-bottom: 26px;
+            animation: fadeUp 0.7s ease both;
+        }
+
+        .hero-badge i {
+            color: var(--accent-cyan);
+        }
+
+        .hero-badge .brand-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: 0.5px;
+        }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.1rem, 5.5vw, 3.8rem);
+            font-weight: 700;
+            line-height: 1.15;
+            color: var(--text-primary);
+            max-width: 900px;
+            margin-bottom: 24px;
+            letter-spacing: -1.5px;
+            animation: fadeUp 0.7s 0.1s ease both;
+        }
+
+        .hero h1 .gradient-text {
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+        }
+
+        .hero h1 .brand-highlight {
+            background: var(--gradient-warm);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p.hero-sub {
+            font-size: clamp(1rem, 2vw, 1.18rem);
+            color: var(--text-secondary);
+            max-width: 640px;
+            margin-bottom: 38px;
+            font-weight: 400;
+            animation: fadeUp 0.7s 0.2s ease both;
+        }
+
+        .hero p.hero-sub strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            animation: fadeUp 0.7s 0.3s ease both;
+        }
+
+        .btn-primary {
+            background: var(--gradient-main);
+            color: white;
+            padding: 15px 32px;
+            border-radius: var(--radius-full);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.98rem;
+            transition: 0.28s;
+            box-shadow: var(--shadow-glow);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, #22d3ee 0%, #4d7cff 100%);
+            opacity: 0;
+            transition: 0.28s;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 25px 70px -15px rgba(77, 124, 255, 0.6);
+        }
+
+        .btn-primary:hover::before {
+            opacity: 1;
+        }
+
+        .btn-primary span,
+        .btn-primary i {
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--text-primary);
+            border: 1px solid var(--border-subtle);
+            padding: 15px 30px;
+            border-radius: var(--radius-full);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.98rem;
+            transition: 0.28s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--border-glow);
+            background: rgba(77, 124, 255, 0.08);
+            transform: translateY(-3px);
+        }
+
+        /* Hero stats */
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+            animation: fadeUp 0.7s 0.4s ease both;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+        /* ===== Section ===== */
+        section {
+            position: relative;
+            z-index: 2;
+            padding: 90px 0;
+        }
+
+        .section-head {
+            margin-bottom: 55px;
+            text-align: center;
+        }
+
+        .section-tag {
+            display: inline-block;
+            color: var(--accent-cyan);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(1.7rem, 4vw, 2.6rem);
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.8px;
+            line-height: 1.2;
+        }
+
+        .section-title .gradient-text {
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-desc {
+            color: var(--text-secondary);
+            max-width: 620px;
+            margin: 16px auto 0;
+            font-size: 1rem;
+        }
+
+        /* ===== Article ===== */
+        .article-wrap {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 45px 48px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+        }
+
+        .article-wrap::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--gradient-main);
+            opacity: 0.6;
+        }
+
+        .article-wrap p {
+            font-size: 1.05rem;
+            color: #c3cde8;
+            margin-bottom: 22px;
+            line-height: 1.85;
+        }
+
+        .article-wrap p:last-child {
+            margin-bottom: 0;
+        }
+
+        .article-wrap .highlight-line {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            padding: 20px 24px;
+            background: rgba(77, 124, 255, 0.06);
+            border-left: 3px solid var(--accent-blue);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin-top: 10px;
+        }
+
+        .article-wrap .highlight-line .gradient-text {
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* ===== Features ===== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+        }
+
+        .feature-item {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 32px 28px;
+            transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top left, rgba(77, 124, 255, 0.1), transparent 60%);
+            opacity: 0;
+            transition: 0.35s;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-8px);
+            border-color: var(--border-glow);
+            background: var(--bg-card-hover);
+            box-shadow: 0 30px 60px -20px rgba(77, 124, 255, 0.3);
+        }
+
+        .feature-item:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            width: 58px;
+            height: 58px;
+            border-radius: 16px;
+            background: rgba(77, 124, 255, 0.1);
+            border: 1px solid rgba(77, 124, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--accent-cyan);
+            margin-bottom: 22px;
+            transition: 0.35s;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-item:hover .feature-icon {
+            background: var(--gradient-main);
+            color: white;
+            border-color: transparent;
+            transform: scale(1.08) rotate(-5deg);
+            box-shadow: 0 12px 30px -8px rgba(77, 124, 255, 0.6);
+        }
+
+        .feature-item h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-item p {
+            color: var(--text-secondary);
+            font-size: 0.93rem;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ===== Order Section ===== */
+        .order-section {
+            padding: 100px 0;
+        }
+
+        .order-card {
+            background: linear-gradient(145deg, rgba(20, 26, 45, 0.85), rgba(12, 16, 30, 0.85));
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 60px 45px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .order-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(77, 124, 255, 0.15), transparent 70%);
+            pointer-events: none;
+        }
+
+        .ecommerce-logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 26px;
+            border-radius: 28px;
+            background: rgba(77, 124, 255, 0.1);
+            border: 1px solid rgba(77, 124, 255, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.6rem;
+            color: var(--accent-cyan);
+            position: relative;
+            z-index: 1;
+            animation: float 4s ease-in-out infinite;
+            box-shadow: 0 20px 50px -15px rgba(77, 124, 255, 0.4);
+        }
+
+        .order-card h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 14px;
+            letter-spacing: -0.8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .order-card h2 .gradient-text {
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .order-card > p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 520px;
+            margin: 0 auto 34px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .order-btn {
+            background: var(--gradient-green);
+            color: white;
+            padding: 18px 44px;
+            border-radius: var(--radius-full);
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 18px 40px -10px rgba(37, 211, 102, 0.6);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            letter-spacing: 0.2px;
+        }
+
+        .order-btn i {
+            font-size: 1.4rem;
+        }
+
+        .order-btn:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 25px 55px -10px rgba(37, 211, 102, 0.8);
+        }
+
+        .order-btn:active {
+            transform: scale(0.98);
+        }
+
+        .order-note {
+            margin-top: 22px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .order-note i {
+            color: var(--accent-green);
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: rgba(4, 6, 12, 0.85);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--border-subtle);
+            padding: 60px 0 28px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+            gap: 40px;
+            margin-bottom: 45px;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            margin-bottom: 16px;
+        }
+
+        .footer-brand img {
+            height: 38px;
+            width: 38px;
+            border-radius: 10px;
+            background: rgba(77, 124, 255, 0.08);
+            border: 1px solid var(--border-subtle);
+            padding: 4px;
+        }
+
+        .footer-brand span {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.15rem;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .footer-col h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+            letter-spacing: 0.3px;
+        }
+
+        .footer-col p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        .footer-col a {
+            display: block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 11px;
+            transition: 0.25s;
+            width: fit-content;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent-cyan);
+            transform: translateX(4px);
+        }
+
+        .footer-col a i {
+            margin-right: 8px;
+            width: 16px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-subtle);
+            padding-top: 24px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .footer-bottom .brand-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* ===== Animations ===== */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 900px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+
+            .article-wrap {
+                padding: 35px 28px;
+            }
+        }
+
+        @media (max-width: 720px) {
+            .nav-toggle {
+                display: flex;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(6, 8, 15, 0.98);
+                backdrop-filter: blur(24px);
+                border-bottom: 1px solid var(--border-subtle);
+                flex-direction: column;
+                align-items: stretch;
+                padding: 0 22px;
+                gap: 6px;
+                max-height: 0;
+                overflow: hidden;
+                transition: 0.35s ease;
+                opacity: 0;
+            }
+
+            .nav-links.open {
+                max-height: 500px;
+                opacity: 1;
+                padding: 18px 22px 26px;
+            }
+
+            .nav-links a.nav-item {
+                padding: 12px 16px;
+                font-size: 0.95rem;
+                border-radius: 12px;
+            }
+
+            .btn-whatsapp-nav {
+                justify-content: center;
+                padding: 13px 20px;
+                margin-top: 6px;
+            }
+
+            .hero {
+                padding: 60px 0 50px;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .hero-stats {
+                gap: 28px;
+                margin-top: 45px;
+            }
+
+            .stat-number {
+                font-size: 1.6rem;
+            }
+
+            .article-wrap {
+                padding: 30px 22px;
+                border-radius: 22px;
+            }
+
+            .article-wrap p {
+                font-size: 0.98rem;
+            }
+
+            .article-wrap .highlight-line {
+                font-size: 1.05rem;
+                padding: 16px 18px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .feature-item {
+                padding: 26px 22px;
+            }
+
+            .order-card {
+                padding: 45px 24px;
+                border-radius: 24px;
+            }
+
+            .ecommerce-logo {
+                width: 82px;
+                height: 82px;
+                font-size: 2.1rem;
+                border-radius: 22px;
+            }
+
+            .order-btn {
+                font-size: 1rem;
+                padding: 16px 32px;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .cta-group {
+                width: 100%;
+            }
+
+            .btn-primary,
+            .btn-outline {
+                flex: 1;
+                justify-content: center;
+                min-width: 160px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .logo-text {
+                font-size: 1.1rem;
+            }
+
+            .hero h1 {
+                letter-spacing: -1px;
+            }
+
+            .order-btn {
+                font-size: 0.92rem;
+                padding: 15px 24px;
+                gap: 9px;
+            }
+
+            .order-btn i {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(77, 124, 255, 0.3);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(77, 124, 255, 0.5);
+        }
+
+        ::selection {
+            background: rgba(77, 124, 255, 0.35);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container navbar">
+            <a href="#" class="logo-wrap">
+                <img src="llo.png" alt="busynes Logo" class="logo-img">
+                <span class="logo-text">busynes</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#services" class="nav-item">Services</a>
+                <a href="#order" class="nav-item">Order</a>
+                <a href="#contact" class="nav-item">Contact</a>
+                <a href="#" class="btn-whatsapp-nav order-trigger">
+                    <i class="fab fa-whatsapp"></i> Order Now
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="container">
+            <span class="hero-badge">
+                <i class="fas fa-bolt"></i> Premium Digital Agency · <span class="brand-name">busynes</span>
+            </span>
+            <h1>
+                Modern <span class="gradient-text">Digital Solutions</span><br>
+                for Modern Business
+            </h1>
+            <p class="hero-sub">
+                <strong>busynes</strong> builds professional websites, e-commerce stores, and custom web solutions — 
+                designed to grow your business online with elegance and performance.
+            </p>
+            <div class="cta-group">
+                <a href="#order" class="btn-primary">
+                    <i class="fas fa-rocket"></i> <span>Get Your Website</span>
+                </a>
+                <a href="#about" class="btn-outline">
+                    <i class="fas fa-arrow-down"></i> Learn More
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Custom Built</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Support</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">SEO</span>
+                    <span class="stat-label">Optimized</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ARTICLE ===== -->
+    <section id="about">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">About busynes</span>
+                <h2 class="section-title">What We <span class="gradient-text">Deliver</span></h2>
+                <p class="section-desc">A closer look at how <strong>busynes</strong> approaches modern, business-ready websites.</p>
+            </div>
+
+            <div class="article-wrap reveal">
+                <p>In today's digital age, a professional website is one of the most important tools for a business to establish its identity, build credibility, and reach customers. <strong>busynes</strong> creates e-commerce websites, business websites, and various custom web solutions tailored to business and personal needs, along with providing ongoing online digital support.</p>
+
+                <p>We strive to build websites that are not only visually appealing but also easy to use, mobile-friendly, and fully customizable according to your business requirements. For online stores, we develop e-commerce websites where product display, categories, customer accounts, order management, and other essential features can be integrated.</p>
+
+                <p>The design and features of a website can be adjusted based on the nature and goals of your business. Therefore, the core objective of our service is to understand each client's needs and deliver the right digital solution for them.</p>
+
+                <p>Our work is not limited to just building websites. We also provide support for website issues, modifications, content updates, digital presence management, and personal assistance with online operations. From individuals starting a new business to small and medium enterprises — everyone can contact us according to their needs.</p>
+
+                <p>At <strong>busynes</strong>, we focus on creating simple, effective, and user-friendly web solutions using modern technology. If you want to present your business more beautifully online or build a professional website for yourself, get in touch with us.</p>
+
+                <p class="highlight-line">
+                    Your idea, our technology — <span class="gradient-text">let's build your digital identity together with busynes.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section id="services">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">Services by busynes</span>
+                <h2 class="section-title">What We <span class="gradient-text">Offer</span></h2>
+                <p class="section-desc">Everything you need to launch and grow a powerful online presence with <strong>busynes</strong>.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item reveal">
+                    <div class="feature-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>E-commerce Websites</h3>
+                    <p>Complete online stores with product management, categories, customer accounts, and order systems.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="feature-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Business Websites</h3>
+                    <p>Professional business websites that build trust and showcase your brand online.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="feature-icon"><i class="fas fa-code"></i></div>
+                    <h3>Custom Web Solutions</h3>
+                    <p>Tailor-made websites designed specifically for your business goals and requirements.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="feature-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                    <h3>Mobile-Friendly Design</h3>
+                    <p>Responsive layouts that look stunning and work flawlessly on every device.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="feature-icon"><i class="fas fa-magnifying-glass"></i></div>
+                    <h3>SEO Optimized</h3>
+                    <p>Search-engine-friendly structure to help your website rank higher and get discovered.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Ongoing Support</h3>
+                    <p>Continuous assistance for updates, fixes, content changes, and digital guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ORDER SECTION ===== -->
+    <section class="order-section" id="order">
+        <div class="container">
+            <div class="order-card reveal">
+                <div class="ecommerce-logo">
+                    <i class="fas fa-store"></i>
+                </div>
+                <h2>Order Your <span class="gradient-text">Website Now</span></h2>
+                <p>Click the button below to place your order directly through WhatsApp. Your message will be pre-filled — just hit send!</p>
+                <button class="order-btn order-trigger">
+                    <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                </button>
+                <div class="order-note">
+                    <i class="fas fa-circle-check"></i> Direct connection to the busynes team — fast response guaranteed.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <img src="llo.png" alt="busynes Logo">
+                        <span>busynes</span>
+                    </div>
+                    <p><strong>busynes</strong> — Modern digital solutions for modern business. We build websites that grow with you.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#order">Order</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="#">E-commerce Websites</a>
+                    <a href="#">Business Websites</a>
+                    <a href="#">Custom Web Solutions</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <a href="https://wa.me/917384058767" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> +91 73840 58767
+                    </a>
+                    <a href="mailto:info@busynes.com">
+                        <i class="fas fa-envelope"></i> info@busynes.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2025 <span class="brand-name">busynes</span>. All rights reserved. Crafted with <i class="fas fa-heart" style="color:#4d7cff;"></i> for modern businesses.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // ===== busynes WhatsApp Configuration =====
+        const BRAND_NAME = "busynes";
+        const WHATSAPP_NUMBER = "917384058767";
+
+        const WHATSAPP_MESSAGE = `Hello ${BRAND_NAME} Team,
+
+I would like to order a professional website for my business. Please share more details about your services, pricing, and delivery time.
+
+Thank you.`;
+
+        const encodedMessage = encodeURIComponent(WHATSAPP_MESSAGE);
+        const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+        // ===== Order Buttons =====
+        document.querySelectorAll('.order-trigger').forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.open(whatsappURL, '_blank', 'noopener');
+            });
+        });
+
+        // ===== Mobile Nav Toggle =====
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        navToggle.addEventListener('click', function () {
+            navLinks.classList.toggle('open');
+            const icon = this.querySelector('i');
+            if (navLinks.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile nav when a link is clicked
+        document.querySelectorAll('#navLinks a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                navLinks.classList.remove('open');
+                const icon = navToggle.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // ===== Smooth Scroll =====
+        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === "#" || targetId === "") return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ===== Reveal on Scroll =====
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.12,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(function (el) {
+            revealObserver.observe(el);
+        });
+
+        // ===== Header Shadow on Scroll =====
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 20) {
+                header.style.background = 'rgba(6, 8, 15, 0.92)';
+                header.style.boxShadow = '0 10px 30px -10px rgba(0, 0, 0, 0.6)';
+            } else {
+                header.style.background = 'rgba(6, 8, 15, 0.75)';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        console.log("✅ busynes | Premium Dark Theme Ready | WhatsApp:", whatsappURL);
+    </script>
+
+</body>
+</html>
